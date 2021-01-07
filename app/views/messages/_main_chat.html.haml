@@ -1,0 +1,25 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__group-name
+      techcamp
+      .chat-main__group-info__group-name__members
+        Member: masa
+    =link_to "#" , class: "chat-main__group-info__btn chat-main__group-info__btn__edit" do
+      Edit
+  .chat-main__message-list
+    .chat-main__message-list__chat-info
+      .chat-main__message-list__chat-info__user
+        masa
+        .chat-main__message-list__chat-info__user__chat
+          おはよう
+      .chat-main__message-list__chat-info__time
+        2021/01/06(wed) 15:29:44
+      
+  .chat-main__message-form
+    .contents
+      %input.contents__message{:type => "text", :value => "", :placeholder => "type a message", :style => "border:none"}
+      %label{class: "contents__pic"}
+        = icon('fas', 'image')
+        %input{type: "file", style: "display:none"}
+    =link_to "#", class:"sent-btn sent-btn__text" do
+      Send
