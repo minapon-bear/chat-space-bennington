@@ -11,7 +11,7 @@
   width: 300px;
   height: 100vh;
 
-  &__user-name {
+  .user-name {
     height: 100px;
     background-color: #253141;
 
@@ -36,7 +36,7 @@
     }
   }
   
-  &__group-list {
+  .group-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
 

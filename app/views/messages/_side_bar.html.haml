@@ -1,18 +1,18 @@
 .side-bar
-  .side-bar__user-name
-    .side-bar__user-name__top-items
-      .side-bar__user-name__top-items__name
+  .user-name
+    .user-name__top-items
+      .user-name__top-items__name
         = current_user.name
       = link_to new_group_path do
-        = icon("fas", "edit", class: "side-bar__user-name__top-items__icons")
+        = icon("fas", "edit", class: "user-name__top-items__icons")
       = link_to edit_user_path(current_user) do
-        = icon("fas", "cog", class: "side-bar__user-name__top-items__icons")
-  .side-bar__group-list
+        = icon("fas", "cog", class: "user-name__top-items__icons")
+  .group-list
     - current_user.groups.each do |group|
-      .side-bar__group-list__box
+      .group-list__box
         = link_to '#', class:"link" do
-          .side-bar__group-list__box__name
+          .group-list__box__name
             = group.name
-          .side-bar__group-list__box__news
+          .group-list__box__news
             メッセージはまだありません。
   
