@@ -56,8 +56,8 @@ $(function(){
       $('form')[0].reset();
       $(".form__sent__btn").prop("disabled", false);
     })
-    .fail({
-      alert("メッセージ送信に失敗しました");
+    .fail(function(){
+      alert('メッセージ送信に失敗しました');
     });
   });
 });
